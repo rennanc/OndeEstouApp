@@ -27,8 +27,15 @@ class ViewController: UIViewController, MKMapViewDelegate {
         let areaExibicao: MKCoordinateSpan = MKCoordinateSpanMake(deltaLat, deltaLon)
         
         let regiao: MKCoordinateRegion = MKCoordinateRegionMake(localizacao, areaExibicao)
+        
         mapa.setRegion(regiao, animated: true)
-
+        
+        let anotacao = MKPointAnnotation()
+        anotacao.title = "Pos Infnet"
+        anotacao.subtitle = "Aula IOS"
+        anotacao.coordinate = localizacao
+        
+        mapa.addAnnotation(anotacao)
     }
 
     override func didReceiveMemoryWarning() {
