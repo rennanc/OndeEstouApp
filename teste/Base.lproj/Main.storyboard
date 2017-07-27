@@ -33,6 +33,9 @@
                             <constraint firstAttribute="trailing" secondItem="jWS-7s-9Ok" secondAttribute="trailing" id="hLv-pb-NOS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapa" destination="jWS-7s-9Ok" id="Clh-pM-5Q5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
