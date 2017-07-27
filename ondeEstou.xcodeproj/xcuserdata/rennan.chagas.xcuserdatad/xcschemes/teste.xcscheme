@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D05742F61F2A9700005E763E"
-               BuildableName = "teste.app"
-               BlueprintName = "teste"
-               ReferencedContainer = "container:teste.xcodeproj">
+               BuildableName = "ondeEstou.app"
+               BlueprintName = "ondeEstou"
+               ReferencedContainer = "container:ondeEstou.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D057430A1F2A9700005E763E"
-               BuildableName = "testeTests.xctest"
-               BlueprintName = "testeTests"
-               ReferencedContainer = "container:teste.xcodeproj">
+               BuildableName = "ondeEstouTests.xctest"
+               BlueprintName = "ondeEstouTests"
+               ReferencedContainer = "container:ondeEstou.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D05743151F2A9700005E763E"
-               BuildableName = "testeUITests.xctest"
-               BlueprintName = "testeUITests"
-               ReferencedContainer = "container:teste.xcodeproj">
+               BuildableName = "ondeEstouUITests.xctest"
+               BlueprintName = "ondeEstouUITests"
+               ReferencedContainer = "container:ondeEstou.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D05742F61F2A9700005E763E"
-            BuildableName = "teste.app"
-            BlueprintName = "teste"
-            ReferencedContainer = "container:teste.xcodeproj">
+            BuildableName = "ondeEstou.app"
+            BlueprintName = "ondeEstou"
+            ReferencedContainer = "container:ondeEstou.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D05742F61F2A9700005E763E"
-            BuildableName = "teste.app"
-            BlueprintName = "teste"
-            ReferencedContainer = "container:teste.xcodeproj">
+            BuildableName = "ondeEstou.app"
+            BlueprintName = "ondeEstou"
+            ReferencedContainer = "container:ondeEstou.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D05742F61F2A9700005E763E"
-            BuildableName = "teste.app"
-            BlueprintName = "teste"
-            ReferencedContainer = "container:teste.xcodeproj">
+            BuildableName = "ondeEstou.app"
+            BlueprintName = "ondeEstou"
+            ReferencedContainer = "container:ondeEstou.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
