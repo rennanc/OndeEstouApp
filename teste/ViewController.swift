@@ -9,9 +9,11 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController, MKMapViewDelegate {
+class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     @IBOutlet weak var mapa: MKMapView!
+    
+    var gerenciadorLocalizacao = CLLocationManager()
     
 
     override func viewDidLoad() {
@@ -30,17 +32,42 @@ class ViewController: UIViewController, MKMapViewDelegate {
         
         mapa.setRegion(regiao, animated: true)
         
-        let anotacao = MKPointAnnotation()
-        anotacao.title = "Pos Infnet"
-        anotacao.subtitle = "Aula IOS"
-        anotacao.coordinate = localizacao
+        gerenciadorLocalizacao.delegate = self
+        gerenciadorLocalizacao.desiredAccuracy = kCLLocationAccuracyBest
+        gerenciadorLocalizacao.requestWhenInUseAuthorization()
+        gerenciadorLocalizacao.startUpdatingLocation()
         
-        mapa.addAnnotation(anotacao)
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        //pegando onde estou
+        let novaLocalizacao = locations.last
+        let anotacao = MKPointAnnotation()
+        anotacao.title = "Eu estou aqui"
+        anotacao.subtitle = "Ainda"
+        
+        //let deltaLat: CLLocationDegrees = 0.01
+        //let deltaLon: CLLocationDegrees = 0.01
+        
+        //pegando as coordenadas onde estou e ponto no pto
+        anotacao.coordinate = (novaLocalizacao?.coordinate)!
+        //let areaExibicao: MKCoordinateSpan = MKCoordinateSpanMake(deltaLat, deltaLon)
+        //let regiao: MKCoordinateRegion = MKCoordinateRegion = MKCoordinateRegionMake((novaLocalizacao?.coordinate)!, areaExibicao)
+        
+        //novo Zoom
+        // mapa.setRegion(regiao, animated: true)
+        mapa.addAnnotation(anotacao)
+        
+        print(locations)
     }
 
 }
